@@ -1,0 +1,36 @@
+Link for Cheat sheet
+https://docs.emmet.io/cheat-sheet/
+
+
+
+Hpow to wrtie and execte java script code.
+
+1. Browser - Frontend development.
+a.  create a javasvript file with some javascript content. 
+b. Include that javascript file into HTML file 
+c. Open HTML file in browser.  
+
+2. NodeJS   - Bakend Development - API end points
+a. create a javascript file in javascript
+b. Run that js file with the below command
+    node <filename>
+Note: Every js code that runs on browser might not run in node js
+
+Most commonly used functions:
+console.log()  console : object, log: function
+document.write() document : object, write : function
+window.alert() window : object, alert: function
+
+While accessing window object methods/functions we dont need to use window object name, they are available in the console. 
+Most commonly used js objects:
+console : log(), error(), assert(), table(), trace(), time(), timeEnd(), dir()
+window  : alert(), prompt(), confirm()
+document : write()
+Math     : max(), min(), sqrt()
+
+
+Assignment
+1. Revise
+2. emmet
+3. write a program using prompt ask user to enter 2 numbers and display addition result.
+
