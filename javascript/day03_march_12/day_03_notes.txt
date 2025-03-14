@@ -1,0 +1,9 @@
+Datatypes 
+========
+Primitives : number, string, boolean, undefined, null, symbol
+non-primitive: Object
+
+variables on javascript
+1. var 
+2. let
+3. const
