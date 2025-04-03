@@ -1,0 +1,28 @@
+<!-- <p>employeetable works!</p> -->
+<div class="container">
+    <table class="table table-bordered table-striped ">
+      <tbody>
+        @for(employee of employeesDataFromParent; track employee.id; ){
+        <tr>
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>
+              <button class="btn btn-primary" (click)="callParentFromHTML(employee.id)">Delete</button>
+            </td>
+            <td>
+              <!-- <button type="button" (click)="addEmployee(employee)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">view</button>     -->
+            </td>  
+          </tr>
+    }
+  </tbody>
+    </table>
+    <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">LaunchInModal</button> -->
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addEmployee">AddEmployee</button>
+    <button class="btn btn-success" (click)="sayHi()">sayHi</button>
+
+    <input type="text" #inputBox1>
+
+    
+ </div>
+

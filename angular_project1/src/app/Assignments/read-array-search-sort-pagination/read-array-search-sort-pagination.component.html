@@ -1,0 +1,42 @@
+<!-- Assignment:
+-Read data from a static array and display list of products in cards
+  https://fakestoreapi.com/products
+-implement pagination
+-implement search functionality (Search By Title)
+-implement sort functionality (Price Asc, Price desc) -->
+<p>read-array-search-sort-pagination works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <input type="text" placeholder="Search by Title" [(ngModel)]="searchString">
+        <button class="btn" (click)="search()">search</button>
+        </div>
+        <div class="col-sm-4">
+             <button class="btn btn-primary" (click)="sort('asc')">sort asc</button>
+            <button class="btn btn-secondary" (click)="sort('dsc')">sort dsc</button>
+        </div>
+    </div>
+    <div class="row mt-2">
+        @for(product of filteredProducts | paginate: { itemsPerPage: 4, currentPage: p };track product.id){
+        <div class="col-sm-3">
+            <div class="card text-center mt-3">
+                <img src="{{product.image}}"  height="150px" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Title: {{product.title}}</h5>
+                    <p class="card-text">category: {{product.category}}</p>
+                    <p class="card-text text-truncate">description: {{product.description}}</p>
+                    <p class="card-text">price: {{product.price}}</p>
+                    <p class="card-text">rate: {{product.rating.rate}}</p>
+                    <a href="" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        </div>
+    }	
+    </div>
+    <div class="row">
+        <div class="col-sm-4 offset-4">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+    </div>
+</div>
+

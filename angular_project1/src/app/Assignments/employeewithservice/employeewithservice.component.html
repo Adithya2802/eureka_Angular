@@ -1,0 +1,35 @@
+<h1>Assignment on Service</h1>
+
+<div class="container">
+    <div class="border">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+            {{selectedOption || 'Select Option'}} 
+          </button>
+        <ul class="dropdown-menu" >
+            <li class="dropdown-item" (click)="selectOption('All Employees')">All Employees</li>
+            <li class="dropdown-item" (click)="selectOption('Male Employees')">Male Employees</li>
+            <li class="dropdown-item" (click)="selectOption('Female Employees')">Female Employees</li>
+        </ul>
+    </div>
+    <div class="table border table-striped">
+        <tbody>
+            <th>
+                <tr class="row">
+                    <td class="col">id</td>
+                    <td class="col">firstName</td>
+                    <td class="col">lastName</td>
+                    <td class="col">gender</td>
+                </tr>
+            
+            @for(employee of employees; track employee.id){
+                <tr class="row">
+                    <td class="col">{{employee.id}}</td>
+                    <td class="col">{{employee.firstName}}</td>
+                    <td class="col">{{employee.lastName}}</td>
+                    <td class="col">{{employee.gender}}</td>
+                </tr>
+            }
+        </th>
+        </tbody>
+    </div>
+</div>

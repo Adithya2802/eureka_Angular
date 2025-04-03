@@ -1,0 +1,54 @@
+<!-- 1. Print the occurence of each character in a string
+   input: 'entertainment'
+   output: { e:3 , n:2 , t: 3 ....} -->
+<script>
+let str = 'entertainment';
+let charArray = [];
+let distinctChars = [];
+let count = 0;
+for (let i = 0; i <= str.length-1; i++) {
+    count = 0; 
+    if(!charArray.includes(str[i])){ 
+    for (let j = i; j <= str.length-1; j++) {
+        if(str[i]===str[j]){
+            count++;
+        }
+    }
+       charArray[i] = str[i];
+    }
+    
+    console.log(charArray[i], count);
+}
+
+// online way
+
+let charObj = {};
+
+for (c of str){
+charObj[c] = (charObj[c] || 0)+1;
+}
+console.log(charObj);
+
+// 2. Print the character which is repeated max no of times
+//    input: 'hello world'
+//    output : 'L'
+
+let str1 = 'hello world';
+let charCount1 = {};
+let maxChar = '';
+let maxCount = 0;
+
+for(let ch of str1){
+if(ch !== ' '){
+    charCount1[ch] = (charCount1[ch] || 0)+ 1;
+
+if(charCount1[ch] > maxCount){
+maxCount = charCount1[ch];
+maxChar = ch;
+}
+}
+}
+console.log(`the character that repeated max is `, maxChar.toUpperCase);
+</script>
+
+

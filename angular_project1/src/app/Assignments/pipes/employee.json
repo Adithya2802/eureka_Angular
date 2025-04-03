@@ -1,0 +1,47 @@
+
+    [
+        {
+          "id": 1,
+          "firstName": "Tom",
+          "lastName": "Cruise",
+          "gender" : "male"
+        },
+        {
+          "id": 2,
+          "firstName": "Maria",
+          "lastName": "Sharapova",
+          "gender" : "female"
+        },
+        {
+          "id": 3,
+          "firstName": "James",
+          "lastName": "Bond",
+          "gender" : "male"
+        },
+        {
+          "id": 4,
+          "firstName": "Nancy",
+          "lastName": "Bond",
+          "gender" : "female"
+        },
+        {
+          "id": 5,
+          "firstName": "Jimmy",
+          "lastName": "Bond",
+          "gender" : "male"
+        },
+        {
+          "id": 6,
+          "firstName": "Tommy",
+          "lastName": "Bond",
+          "gender" : "male"
+        },
+        {
+          "id": 7,
+          "firstName": "Jamesy",
+          "lastName": "Bond",
+          "gender" : "female"
+        }
+      ]
+    
+  

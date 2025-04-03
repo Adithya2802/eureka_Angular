@@ -1,0 +1,58 @@
+<!-- Have a paragraph & a toggle button, on click of the button 
+control the visibility(Show/Hide) of the paragraph -->
+<button (click)="toggleVisibility()"> {{ isVisible ? 'Show' : 'Hide' }} Paragraph</button>
+<p [hidden]="isVisible">Paragraph</p>
+
+<!-- Create a text-area with maxLength=100, as the user keeps typing display updated 
+ Remaining characters. -->
+
+ <textarea [maxLength]="maxLength" [(ngModel)] = "msg">
+ </textarea>
+ <p>{{100-msg.length}}</p>
+ 
+
+<!-- Create dropdown with state names, when user changes dropdown value, 
+ print the selected dropdown value in a paragraph -->
+
+ <select name="select State" id="" [(ngModel)]="selectedState">
+    <option value="Virginia" selected>Virginia</option>
+    <option value="Alaska">Alaska</option>
+    <option value="NewJersey">NewJersey</option>
+    <option value="New York">York</option>
+    <option value="California">California</option>
+ </select>
+ <p [hidden]="!selectedState">{{selectedState}}</p>
+
+ <!-- have 2 inputBoxes, and a dropdown(+,-,*,/) and perform arithmetic operations -->
+ <div class="mt-2 p-2 border">
+ <input type="number" [(ngModel)] = "num1">
+  <input type="number" [(ngModel)] = "num2">
+  <select [(ngModel)] = "selectedOperation">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+  </select>
+  <button class="btn btn-primary mx-2" (click)="mathOperation()">calculate</button>
+  <div>
+    Result: {{result}} 
+  </div>
+
+  <!-- 5. create a input box, toggle the type of that input box to (text/password) -->
+  <div class="mt-2 p-2 border">
+<input [type]="flag?'text':'password'">
+<button class="btn btn-primary mx-2" (click)="flag=!flag">{{flag?'Hide':'Show'}}</button>
+  </div>
+
+  <!-- 6. create a counter example with 3 controls(increment,decrement,reset) -->
+  <div class="mt-2 p-2 border">
+    <div>{{value1}}</div>
+    <button class="btn btn-primary mx-2" (click)="value1=value1+1" >increment</button>
+    <button class="btn btn-primary mx-2" (click)="value1=value1-1"  >decrement</button>
+    <button class="btn btn-primary mx-2" (click)="value1=0"  >reset</button>
+  </div> 
+</div> 
+    
+   
+
+

@@ -1,0 +1,10 @@
+<!-- <p>employee works!</p> -->
+<app-employeeadd (nameEvent)="receiveDataFromChild($event)"></app-employeeadd>
+<app-employeetable [employeesDataFromParent]="employeeArr" (deleteEvent)="delete($event)" ></app-employeetable>
+
+<div class="container">
+    @for(item of numArr; track $index){
+        <span>{{item}}</span>&nbsp;
+    }
+</div>
+<button class="btn btn-primary" (click)="numArr.push(60)"> add new data</button>

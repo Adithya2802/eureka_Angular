@@ -1,0 +1,13 @@
+
+<div class="container border md-2">
+    <h1>This is Parent</h1>
+    <div class="container">
+        @for(item of numArr; track $index){
+            <span>{{item}}</span>&nbsp;
+        }
+        <button class="btn btn-primary" (click)="numArr.push(addValue())">Add number</button>
+    </div>
+
+    <app-child p-2 md-2 [inputToChild]="valuefromParent" [numValue]="value"></app-child>
+
+</div>

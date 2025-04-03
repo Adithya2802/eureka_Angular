@@ -1,0 +1,9 @@
+<div class="container border" style="margin: 0.5rem;">
+    <h2>This is Child</h2>
+    <span>value from child {{inputToChild}}</span>
+    <div class="container">
+        @for(item of numArr; track $index){
+            <span>{{item}}</span>&nbsp;
+        }
+    </div>
+</div>
