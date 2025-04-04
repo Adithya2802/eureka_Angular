@@ -8,6 +8,7 @@ import { ParentComponent } from '../parent/parent.component';
 import { Demo1Component } from '../demo1/demo1.component';
 import { Demo2Component } from '../demo2/demo2.component';
 import { EmployeewithserviceComponent } from '../../Assignments/employeewithservice/employeewithservice.component';
+import { HttpDemo1Component } from '../http-demo1/http-demo1.component';
 
 @Component({
   selector: 'app-body',
@@ -19,7 +20,8 @@ import { EmployeewithserviceComponent } from '../../Assignments/employeewithserv
             ParentComponent,
             Demo1Component,
             Demo2Component,
-            EmployeewithserviceComponent
+            EmployeewithserviceComponent,
+            HttpDemo1Component
 
        
   ],
