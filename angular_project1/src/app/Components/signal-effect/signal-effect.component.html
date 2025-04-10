@@ -1,0 +1,19 @@
+
+<h2 class="text-center">Effects</h2>
+<div class="border">
+    <h4 class="text-center">UserId : {{userId()}}</h4>
+</div>
+<button class="btn btn-primary" (click)="incrementUserId()">Increment</button>
+<button class="btn btn-danger" (click)="destroyEffect()">destroy effect</button>
+<div class="col-sm-4 offset-4 mt-2">
+<div class="card text-center">
+    <div class="card-body">
+        <h5 class="card-title">{{userData.username}}</h5>
+        <p class="card-text">Name: {{userData.name}}</p>
+        <p class="card-text">Email: {{userData.email}}</p>
+        <p class="card-text">Phone: {{userData.phone}}</p>
+        <p class="card-text">City: {{userData.address.city}}</p>
+        <a href="#" class="btn btn-primary">Details</a>
+    </div>
+</div>
+</div>

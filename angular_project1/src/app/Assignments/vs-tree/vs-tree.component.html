@@ -1,0 +1,12 @@
+<h1>Tree Structure Assignment</h1>
+<div class="container">
+<div>
+<button class="btn btn-secondary" (click)="folder(folderData.isFolder)">{{folderData.name}}</button><br>
+@for(item of folderData.items; track $index){
+    <button class="btn btn-secondary" [hidden]=hideChild (click)="folder(item.isFolder)">{{item.name}}</button><br>
+    @for(item of item.items;track $index){
+        <button class="btn btn-secondary" [hidden]=true (click)="folder(item.isFolder)">{{item.name}}</button><br>
+    }
+}
+</div>
+</div>
