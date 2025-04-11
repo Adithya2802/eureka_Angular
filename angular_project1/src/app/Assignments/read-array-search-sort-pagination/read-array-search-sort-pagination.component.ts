@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import productsArr from './products';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './read-array-search-sort-pagination.component.css',
   imports:[
     NgxPaginationModule,
-    FormsModule
+    FormsModule,
+    RouterLink
   ]
 })
 

@@ -21,6 +21,14 @@ import { Signaldemo1Component } from '../signaldemo1/signaldemo1.component';
 import { SignalEffectComponent } from '../signal-effect/signal-effect.component';
 import { Formdemo1Component } from '../formdemo1/formdemo1.component';
 import { Formdemo2TemplateComponent } from '../formdemo2-template/formdemo2-template.component';
+import { FormsComponent } from '../../Assignments/forms/forms.component';
+import { ModeldrivenformComponent } from '../modeldrivenform/modeldrivenform.component';
+import { DynamicformComponent } from '../dynamicform/dynamicform.component';
+import { HomeComponent } from '../home/home.component';
+import { CareerComponent } from '../career/career.component';
+import { NotfoundComponent } from '../notfound/notfound.component';
+import { AboutusComponent } from '../aboutus/aboutus.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-body',
@@ -45,7 +53,15 @@ import { Formdemo2TemplateComponent } from '../formdemo2-template/formdemo2-temp
             Signaldemo1Component,
             SignalEffectComponent,
             Formdemo1Component,
-            Formdemo2TemplateComponent
+            Formdemo2TemplateComponent,
+            FormsComponent,
+            ModeldrivenformComponent,
+            DynamicformComponent,
+            HomeComponent,
+            CareerComponent,
+            NotfoundComponent,
+            AboutusComponent,
+            RouterOutlet
 
        
   ],

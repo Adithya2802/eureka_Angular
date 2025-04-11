@@ -27,7 +27,9 @@
                     <p class="card-text text-truncate">description: {{product.description}}</p>
                     <p class="card-text">price: {{product.price}}</p>
                     <p class="card-text">rate: {{product.rating.rate}}</p>
-                    <a href="" class="btn btn-primary">Details</a>
+                    <button class="btn btn-primary" [routerLink]="['/productdetails']" 
+                    [queryParams]="{id:product.id, category: product.category, description:product.description}">
+                    Details</button>
                 </div>
             </div>
         </div>
